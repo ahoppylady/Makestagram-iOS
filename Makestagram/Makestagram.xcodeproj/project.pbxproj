@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		77E71339AF7A26D08FC27E19 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B635C5BAD63166AAB5B5A42A /* Pods_Makestagram.framework */; };
 		78137DC820F4624500C16539 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78137DC720F4624500C16539 /* GoogleService-Info.plist */; };
+		785F473D20F46C3C00EAB687 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785F473C20F46C3C00EAB687 /* Login.storyboard */; };
+		785F473F20F46CB800EAB687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F473E20F46CB800EAB687 /* LoginViewController.swift */; };
 		78A3522B20F414850035C8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3522A20F414850035C8B6 /* AppDelegate.swift */; };
 		78A3522D20F414850035C8B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3522C20F414850035C8B6 /* ViewController.swift */; };
 		78A3523020F414860035C8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A3522E20F414860035C8B6 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		78137DC720F4624500C16539 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		785F473C20F46C3C00EAB687 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		785F473E20F46CB800EAB687 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		78A3522720F414850035C8B6 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A3522A20F414850035C8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A3522C20F414850035C8B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			children = (
 				78A3523320F414880035C8B6 /* LaunchScreen.storyboard */,
 				78A3522E20F414860035C8B6 /* Main.storyboard */,
+				785F473C20F46C3C00EAB687 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				7820D45C20F46721005BE350 /* Extensions */,
 				7820D45B20F466F2005BE350 /* Controllers */,
 				78A3522C20F414850035C8B6 /* ViewController.swift */,
+				785F473E20F46CB800EAB687 /* LoginViewController.swift */,
 				78A3523120F414880035C8B6 /* Assets.xcassets */,
 			);
 			path = Makestagram;
@@ -219,6 +225,7 @@
 				78A3523520F414880035C8B6 /* LaunchScreen.storyboard in Resources */,
 				78137DC820F4624500C16539 /* GoogleService-Info.plist in Resources */,
 				78A3523220F414880035C8B6 /* Assets.xcassets in Resources */,
+				785F473D20F46C3C00EAB687 /* Login.storyboard in Resources */,
 				78A3523020F414860035C8B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785F473F20F46CB800EAB687 /* LoginViewController.swift in Sources */,
 				78A3522D20F414850035C8B6 /* ViewController.swift in Sources */,
 				78A3522B20F414850035C8B6 /* AppDelegate.swift in Sources */,
 			);
