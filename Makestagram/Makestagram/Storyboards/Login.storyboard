@@ -17,13 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="HI7-6k-D9X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dv1-zO-uiu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5Iy-Ec-mqX">
+                                        <rect key="frame" x="68" y="80.5" width="240" height="104.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makestagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hK-68-7FV">
+                                                <rect key="frame" x="12" y="0.0" width="216" height="43.5"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <color key="textColor" red="0.98643202292238974" green="1" blue="0.96457840663692807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to see photos and videos from your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="C3L-Ea-u3J">
+                                                <rect key="frame" x="0.0" y="68.5" width="240" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.41568627450980389" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="XSa-1I-Qbm"/>
+                                    <constraint firstItem="5Iy-Ec-mqX" firstAttribute="centerY" secondItem="dv1-zO-uiu" secondAttribute="centerY" id="dII-ea-Nz2"/>
+                                    <constraint firstItem="5Iy-Ec-mqX" firstAttribute="centerX" secondItem="dv1-zO-uiu" secondAttribute="centerX" id="wbJ-yo-UQs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08R-G5-rzd">
+                                <rect key="frame" x="35" y="290" width="305" height="44"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.59215686274509804" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HnO-N3-0nB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Register or Log In"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="oNj-hy-qoD" eventType="touchUpInside" id="ubu-WH-Iec"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dv1-zO-uiu" firstAttribute="top" secondItem="HI7-6k-D9X" secondAttribute="top" id="6UZ-U7-07S"/>
+                            <constraint firstItem="dv1-zO-uiu" firstAttribute="leading" secondItem="6g0-ci-rnB" secondAttribute="leading" id="6vu-df-CYu"/>
+                            <constraint firstItem="6g0-ci-rnB" firstAttribute="trailing" secondItem="08R-G5-rzd" secondAttribute="trailing" constant="35" id="FXq-5g-GPL"/>
+                            <constraint firstItem="dv1-zO-uiu" firstAttribute="trailing" secondItem="6g0-ci-rnB" secondAttribute="trailing" id="PGq-Sl-IYY"/>
+                            <constraint firstItem="08R-G5-rzd" firstAttribute="top" secondItem="dv1-zO-uiu" secondAttribute="bottom" constant="25" id="bsG-lv-6uO"/>
+                            <constraint firstItem="08R-G5-rzd" firstAttribute="leading" secondItem="6g0-ci-rnB" secondAttribute="leading" constant="35" id="ynH-X0-dj5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6g0-ci-rnB"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="08R-G5-rzd" id="s2S-Qe-UKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0p5-zW-UOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="-156"/>
+            <point key="canvasLocation" x="-170.40000000000001" y="-156.07196401799101"/>
         </scene>
     </scenes>
 </document>
