@@ -13,18 +13,19 @@ import FirebaseDatabase
 
 struct PostService {
     static func create(for image: UIImage) {
-        let imageRef = Storage.storage().reference().child("test_image.jpg")
+        let imageRef = StorageReference.newPostImageReference()
         StorageService.uploadImage(image, at: imageRef) { (downloadURL) in
             guard let downloadURL = downloadURL else {
                 return
             }
             
             let urlString = downloadURL.absoluteString
-            print("image url: \(urlString)")
-        }
+            let aspectHeight = image.aspectHeight
+            create(forURLString: urlString, aspectHeight: aspectHeight)
+    }
     }
     /* Private because we don't want to be able to create a new post in the database without an image URL and aspect height. */
-    private static func create(forURLString urlString: String, aspectHeight: CGFloat) {
+        private static func create(forURLString urlString: String, aspectHeight: CGFloat) {
         // create new post in database
         // 1
         let currentUser = User.current
@@ -39,3 +40,4 @@ struct PostService {
         postRef.updateChildValues(dict)
     }
 }
+

@@ -27,6 +27,9 @@
 		78BC57CF20F7F725000720C3 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC57CE20F7F725000720C3 /* StorageService.swift */; };
 		78BC57D120F7F782000720C3 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC57D020F7F782000720C3 /* PostService.swift */; };
 		78BC57D320F7F8CC000720C3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC57D220F7F8CB000720C3 /* Post.swift */; };
+		78BC57D520F7FB35000720C3 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC57D420F7FB35000720C3 /* UIImage+Size.swift */; };
+		78BC57D720F7FB91000720C3 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC57D620F7FB91000720C3 /* StorageReference+Post.swift */; };
+		78BC57D920F7FE15000720C3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BC57D820F7FE15000720C3 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		78BC57CE20F7F725000720C3 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		78BC57D020F7F782000720C3 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		78BC57D220F7F8CB000720C3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		78BC57D420F7FB35000720C3 /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
+		78BC57D620F7FB91000720C3 /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
+		78BC57D820F7FE15000720C3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B635C5BAD63166AAB5B5A42A /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45733A770C11B6E9701F5DE /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		C7741A5D3007ED4A8340756C /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				789FACBE20F69FF800B9AFAB /* Storyboard+Utility.swift */,
+				78BC57D420F7FB35000720C3 /* UIImage+Size.swift */,
+				78BC57D620F7FB91000720C3 /* StorageReference+Post.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 		7820D46020F46748005BE350 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				78BC57D820F7FE15000720C3 /* Home.storyboard */,
 				78A3523320F414880035C8B6 /* LaunchScreen.storyboard */,
 				78A3522E20F414860035C8B6 /* Main.storyboard */,
 				785F473C20F46C3C00EAB687 /* Login.storyboard */,
@@ -258,6 +267,7 @@
 				78A3523520F414880035C8B6 /* LaunchScreen.storyboard in Resources */,
 				78137DC820F4624500C16539 /* GoogleService-Info.plist in Resources */,
 				78A3523220F414880035C8B6 /* Assets.xcassets in Resources */,
+				78BC57D920F7FE15000720C3 /* Home.storyboard in Resources */,
 				785F473D20F46C3C00EAB687 /* Login.storyboard in Resources */,
 				78A3523020F414860035C8B6 /* Main.storyboard in Resources */,
 			);
@@ -339,10 +349,12 @@
 				7813DDA720F6BC7300108A99 /* MainTabBarController.swift in Sources */,
 				789FACBB20F58C0300B9AFAB /* UserService.swift in Sources */,
 				78BC57D320F7F8CC000720C3 /* Post.swift in Sources */,
+				78BC57D520F7FB35000720C3 /* UIImage+Size.swift in Sources */,
 				789FACBF20F69FF800B9AFAB /* Storyboard+Utility.swift in Sources */,
 				78BC57CD20F7DD9F000720C3 /* MGPhotoHelper.swift in Sources */,
 				789FACBD20F69DEA00B9AFAB /* Constants.swift in Sources */,
 				7813DDA520F6B50E00108A99 /* FindFriendsViewController.swift in Sources */,
+				78BC57D720F7FB91000720C3 /* StorageReference+Post.swift in Sources */,
 				7813DDA320F6B4F900108A99 /* HomeViewController.swift in Sources */,
 				78BC57D120F7F782000720C3 /* PostService.swift in Sources */,
 				785F474720F5701A00EAB687 /* CreateUsernameViewController.swift in Sources */,
