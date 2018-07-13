@@ -22,18 +22,32 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostImageCell" id="W1M-jb-Y04">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="W1M-jb-Y04" customClass="PostImageCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W1M-jb-Y04" id="lPp-Rn-QtP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Zz-zF-HrR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3Zz-zF-HrR" firstAttribute="leading" secondItem="lPp-Rn-QtP" secondAttribute="leading" id="LCc-3j-RM0"/>
+                                                <constraint firstAttribute="bottom" secondItem="3Zz-zF-HrR" secondAttribute="bottom" id="NaK-j2-y2k"/>
+                                                <constraint firstAttribute="trailing" secondItem="3Zz-zF-HrR" secondAttribute="trailing" id="Vfd-9o-dmS"/>
+                                                <constraint firstItem="3Zz-zF-HrR" firstAttribute="top" secondItem="lPp-Rn-QtP" secondAttribute="top" id="eo1-S4-Iza"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImageview" destination="3Zz-zF-HrR" id="f4v-yx-q83"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="QMl-aW-KFx" id="T1y-Dl-FEl"/>
-                                    <outlet property="delegate" destination="QMl-aW-KFx" id="HH8-fN-4fc"/>
+                                    <outlet property="delegate" destination="QMl-aW-KFx" id="13n-up-XAf"/>
                                 </connections>
                             </tableView>
                         </subviews>
